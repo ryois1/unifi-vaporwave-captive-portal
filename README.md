@@ -27,7 +27,6 @@ A vaporwave inspired external captive portal for Ubiquiti UniFi
         include fastcgi_params;
         fastcgi_pass unix:/run/php-fpm/www.sock; #your php-fpm sock
     }
-}
 # UniFi Controller
 ![Screenshot of UniFi config](https://i.imgur.com/D00GJNy.png)
  - External portal server
