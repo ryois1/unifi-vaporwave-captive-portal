@@ -10,7 +10,7 @@ $controlleruser      = ""; // the user name for access to the UniFi Controller
 $controllerpassword  = ""; // the password for access to the UniFi Controller
 $controllerurl       = ""; // full url to the UniFi Controller, eg. 'https://22.22.11.11:8443', for UniFi OS-based controllers a port suffix isn't required, no trailing slashes should be added
 $controllerversion   = ""; // the version of the UniFi Controller, e.g. '4.6.6' (must be at least 4.0.0)
-$controlersite       = ""; // the site ID of your site in the UniFi Controller.
+$controllersite       = ""; // the site ID of your site in the UniFi Controller.
 $debug               = false; // set to true (without quotes) to enable debug output to the browser and the PHP error log
 
 header('Content-Type: application/json');
@@ -38,7 +38,7 @@ if (isset($_POST["client"])) {
     die();
 }
 $duration         = 2000;
-$site_id          = $controlersite;
+$site_id          = $controllersite;
 $note             = "This client was authorized via the captive portal at " . $d;
 $unifi_connection = new UniFi_API\Client($controlleruser, $controllerpassword, $controllerurl, $site_id, $controllerversion);
 $set_debug_mode   = $unifi_connection->set_debug($debug);
