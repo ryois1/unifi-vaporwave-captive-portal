@@ -10,6 +10,7 @@ A vaporwave inspired external captive portal for Ubiquiti UniFi
  - UniFi Controller version 4.0.0 or later
 # Install
  - Clone/Download this repo
+ - Edit login.php with your UniFi information
  - Configure nginx, see nginx configuration
  - Configure UniFi controller
 # Nginx
